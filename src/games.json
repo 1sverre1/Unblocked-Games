@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "title": "2048",
+    "thumbnail": "https://picsum.photos/seed/2048/400/300",
+    "url": "https://gabrielecirulli.github.io/2048/"
+  },
+  {
+    "id": "2",
+    "title": "Hextris",
+    "thumbnail": "https://picsum.photos/seed/hextris/400/300",
+    "url": "https://hextris.github.io/hextris/"
+  },
+  {
+    "id": "3",
+    "title": "Flappy Bird",
+    "thumbnail": "https://picsum.photos/seed/flappy/400/300",
+    "url": "https://wayou.github.io/flappybird/"
+  },
+  {
+    "id": "4",
+    "title": "Snake",
+    "thumbnail": "https://picsum.photos/seed/snake/400/300",
+    "url": "https://patorjk.com/games/snake/"
+  },
+  {
+    "id": "5",
+    "title": "Pac-Man",
+    "thumbnail": "https://picsum.photos/seed/pacman/400/300",
+    "url": "https://macek.github.io/google_pacman/"
+  },
+  {
+    "id": "6",
+    "title": "Clumsy Bird",
+    "thumbnail": "https://picsum.photos/seed/clumsy/400/300",
+    "url": "https://ellisonleao.github.io/clumsy-bird/"
+  },
+  {
+    "id": "7",
+    "title": "Tower",
+    "thumbnail": "https://picsum.photos/seed/tower/400/300",
+    "url": "https://heloir.github.io/Tower/"
+  },
+  {
+    "id": "8",
+    "title": "Breakout",
+    "thumbnail": "https://picsum.photos/seed/breakout/400/300",
+    "url": "https://mgechev.github.io/breakout/"
+  }
+]
