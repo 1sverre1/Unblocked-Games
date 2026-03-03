@@ -2,7 +2,22 @@
   {
     "id": "1",
     "title": "Basket Hoop",
-    "thumbnail": "https://picsum.photos/seed/basketball/400/300",
-    "url": "https://classroom-a.b-cdn.net/games/2024/construct/311/basket-hoop/index-gg.html"
+    "thumbnail": "https://picsum.photos/seed/basketball/800/600",
+    "description": "Test your aim and score as many hoops as possible in this addictive basketball challenge.",
+    "url": "https://classroom-a.b-cdn.net/games/2024/construct/311/basket-hoop/index-gg.html",
+    "category": "Sports",
+    "tags": ["SPORTS", "BASKETBALL"],
+    "isHot": true
+  },
+  {
+    "id": "snake-internal",
+    "title": "Neon Shinobi Snake",
+    "thumbnail": "https://picsum.photos/seed/animesnake/800/600",
+    "description": "A high-speed neural override simulation. Navigate the data-stream and consume power orbs to grow your shinobi spirit.",
+    "url": "internal",
+    "category": "Action",
+    "tags": ["ANIME", "NEON", "INTERNAL"],
+    "isHot": true,
+    "isInternal": true
   }
 ]
