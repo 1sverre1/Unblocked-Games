@@ -132,7 +132,7 @@ function render() {
                                 src="${selectedGame.url}"
                                 class="w-full h-full border-none relative z-10"
                                 title="${selectedGame.title}"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; focus-without-user-activation"
+                                allow="accelerometer *; ambient-light-sensor *; autoplay *; camera *; clipboard-read *; clipboard-write *; encrypted-media *; fullscreen *; geolocation *; gyroscope *; local-network-access *; magnetometer *; microphone *; midi *; payment *; picture-in-picture *; screen-wake-lock *; speaker *; sync-xhr *; usb *; vibrate *; vr *; web-share *"
                                 sandbox="allow-forms allow-modals allow-popups allow-presentation allow-scripts allow-same-origin"
                                 allowfullscreen
                             ></iframe>
