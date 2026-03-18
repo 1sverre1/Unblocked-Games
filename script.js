@@ -177,7 +177,7 @@ function render() {
                                     class="w-full h-full border-none relative z-10"
                                     title="${selectedGame.title}"
                                     allow="accelerometer *; ambient-light-sensor *; autoplay *; camera *; clipboard-read *; clipboard-write *; encrypted-media *; fullscreen *; geolocation *; gyroscope *; local-network-access *; magnetometer *; microphone *; midi *; payment *; picture-in-picture *; screen-wake-lock *; speaker *; sync-xhr *; usb *; vibrate *; vr *; web-share *"
-                                    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-scripts allow-same-origin"
+                                    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-scripts allow-same-origin allow-popups-to-escape-sandbox allow-downloads allow-storage-access-by-user-activation"
                                     allowfullscreen
                                 ></iframe>
                             `}

@@ -29,5 +29,15 @@
     "category": "Driving",
     "tags": ["DRIVING", "JET", "FAST"],
     "isHot": true
+  },
+  {
+    "id": "neural-simulation",
+    "title": "Neural Simulation",
+    "thumbnail": "https://picsum.photos/seed/neuralsim/800/600",
+    "description": "Access the neural grid simulation. A high-fidelity data stream override.",
+    "url": "https://www.gstatic.com/atari/embeds/83a60601c213b72fb19c1855fb0c5f26/intermediate-frame-minified.html?jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.no.p8KUI-_oI_8.O%2Fd%3D1%2Frs%3DAHpOoo-WxWWzwpwooZrhXm6YaWII0PjVsg%2Fm%3D__features__&r=152746461",
+    "category": "Strategy",
+    "tags": ["NEURAL", "GRID", "SIMULATION"],
+    "isHot": false
   }
 ]
