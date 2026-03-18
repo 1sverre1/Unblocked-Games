@@ -21,13 +21,13 @@
     "isInternal": true
   },
   {
-    "id": "geometry-dash",
-    "title": "Geometry Dash",
-    "thumbnail": "https://picsum.photos/seed/geometrydash/800/600",
-    "description": "Jump and fly your way through danger in this rhythm-based action platformer!",
-    "url": "https://cpsgames.org/splash/geometry-dash",
-    "category": "Arcade",
-    "tags": ["ARCADE", "RHYTHM", "GEOMETRY"],
+    "id": "jet-rush",
+    "title": "Jet Rush",
+    "thumbnail": "https://picsum.photos/seed/jetrush/800/600",
+    "description": "Pilot a high-tech jet through challenging courses and obstacles at high speeds!",
+    "url": "https://games.crazygames.com/en_US/jet-rush/index.html?czyExpSkipPlayNowOnly_CZY_18027_2=ineligible&isNewUser=false&v=1.353",
+    "category": "Driving",
+    "tags": ["DRIVING", "JET", "FAST"],
     "isHot": true
   }
 ]

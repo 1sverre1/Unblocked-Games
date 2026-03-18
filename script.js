@@ -239,7 +239,9 @@ window.setSelectedGame = (id) => {
         document.body.classList.add('modal-open');
         if (selectedGame.isInternal) {
             if (activeInternalGameCleanup) activeInternalGameCleanup();
-            setTimeout(startSnakeGame, 100);
+            if (selectedGame.id === 'snake-internal') {
+                setTimeout(startSnakeGame, 100);
+            }
         }
     }
     render();
