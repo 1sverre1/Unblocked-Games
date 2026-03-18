@@ -3,6 +3,9 @@ let searchQuery = '';
 let selectedGame = null;
 let isFullscreen = false;
 let activeCategory = 'All';
+let snakeGameInterval = null;
+let snakeHighScore = 0;
+let activeInternalGameCleanup = null;
 
 const categories = ['All', 'Arcade', 'Puzzle', 'Action', 'Sports', 'Strategy', 'Driving'];
 
@@ -248,8 +251,6 @@ window.toggleFullscreen = () => {
 };
 
 // Snake Game Logic
-let snakeGameInterval = null;
-let snakeHighScore = 0;
 
 function startSnakeGame() {
     const canvas = document.getElementById('snake-canvas');
