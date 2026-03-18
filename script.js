@@ -26,6 +26,12 @@ function render() {
 
     app.innerHTML = `
         <div class="min-h-screen flex flex-col relative z-10">
+            <!-- Top Banner -->
+            <div class="bg-magenta-600/20 border-b border-magenta-500/50 py-2 px-6 text-center animate-pulse">
+                <a href="https://skolenmin.cdu.no/a/fra-larer-5cb5d6742d78870019a9deb6/assignments" target="_blank" class="text-[10px] font-black text-magenta-400 uppercase tracking-[0.3em] hover:text-white transition-colors">
+                    [SYSTEM_LINK] ACCESS_ASSIGNMENTS_PROTOCOL_05CB5D
+                </a>
+            </div>
             <!-- Header -->
             <header class="sticky top-0 z-40 bg-black/80 backdrop-blur-md border-b border-cyan-500/30">
                 <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between gap-8">
@@ -34,7 +40,7 @@ function render() {
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-black w-6 h-6"><rect width="20" height="12" x="2" y="6" rx="2"/><line x1="6" x2="10" y1="12" y2="12"/><line x1="8" x2="8" y1="10" y2="14"/><line x1="15" x2="15.01" y1="13" y2="13"/><line x1="18" x2="18.01" y1="11" y2="11"/></svg>
                         </div>
                         <h1 class="text-2xl font-black tracking-tighter text-white font-display uppercase italic">
-                            SVERRE'S<span class="neon-text-cyan">GAMES</span>
+                            LEARNING<span class="neon-text-cyan">LESSONS</span>
                         </h1>
                     </div>
 
@@ -185,7 +191,7 @@ function render() {
                             <div class="w-8 h-8 neon-bg-cyan rounded-none flex items-center justify-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-black"><rect width="20" height="12" x="2" y="6" rx="2"/><line x1="6" x2="10" y1="12" y2="12"/><line x1="8" x2="8" y1="10" y2="14"/><line x1="15" x2="15.01" y1="13" y2="13"/><line x1="18" x2="18.01" y1="11" y2="11"/></svg>
                             </div>
-                            <span class="text-xl font-black text-white tracking-tighter font-display uppercase italic">SVERRE'S<span class="neon-text-cyan">GAMES</span></span>
+                            <span class="text-xl font-black text-white tracking-tighter font-display uppercase italic">LEARNING<span class="neon-text-cyan">LESSONS</span></span>
                         </div>
                         <p class="text-cyan-900 text-xs max-w-xs text-center md:text-left font-bold uppercase tracking-widest">
                             THE ULTIMATE NEURAL OVERRIDE FOR UNBLOCKED PROTOCOLS.
@@ -199,7 +205,7 @@ function render() {
                             <a href="#" class="hover:text-cyan-400 transition-colors">Neural_Link</a>
                         </div>
                         <p class="text-cyan-900 text-[10px] uppercase tracking-[0.3em] font-black">
-                            © 2026 SVERRE'S GAMES • ALL SYSTEMS NOMINAL
+                            © 2026 LEARNING LESSONS • ALL SYSTEMS NOMINAL
                         </p>
                     </div>
                 </div>
@@ -224,10 +230,12 @@ window.setSelectedGame = (id) => {
         isFullscreen = false;
         document.body.classList.remove('modal-open');
         if (snakeGameInterval) clearInterval(snakeGameInterval);
+        if (activeInternalGameCleanup) activeInternalGameCleanup();
     } else {
         selectedGame = gamesData.find(g => g.id === id);
         document.body.classList.add('modal-open');
         if (selectedGame.isInternal) {
+            if (activeInternalGameCleanup) activeInternalGameCleanup();
             setTimeout(startSnakeGame, 100);
         }
     }
@@ -278,6 +286,9 @@ function startSnakeGame() {
     }
     
     window.addEventListener('keydown', handleKey);
+    activeInternalGameCleanup = () => {
+        window.removeEventListener('keydown', handleKey);
+    };
     
     if (snakeGameInterval) clearInterval(snakeGameInterval);
     
